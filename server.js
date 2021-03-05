@@ -8,7 +8,7 @@ const Cors = require("cors");
 
 //App Config
 const app = express();
-const port = process.env.port || 8001; 
+const port = process.env.port||'8001'; 
 const connection_url = 'mongodb+srv://uttampatro:NhnN7tzwJoRDHuic@cluster0.ihiah.mongodb.net/tinderdb?retryWrites=true&w=majority'
 
 //MIddlewares
