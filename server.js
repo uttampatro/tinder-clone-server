@@ -1,5 +1,5 @@
 // import express from "express";
-const express = require("express");
+var express = require("express");
 // import mongoose from "mongoose";
 const mongoose = require("mongoose");
 // import Cards from "./dbCards"
@@ -8,7 +8,7 @@ const Cors = require("cors");
 
 //App Config
 const app = express();
-const PORT = process.env.PORT || 8001; 
+const port = process.env.port || 8001; 
 const connection_url = 'mongodb+srv://uttampatro:NhnN7tzwJoRDHuic@cluster0.ihiah.mongodb.net/tinderdb?retryWrites=true&w=majority'
 
 //MIddlewares
@@ -48,4 +48,4 @@ app.get("/tinder/cards", (req, res) => {
 });
 
 //Listener
-app.listen(PORT, () => console.log(`listening on localhost: ${PORT}`));
+app.listen(port, () => console.log(`listening on localhost: ${port}`));
